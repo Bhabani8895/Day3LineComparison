@@ -17,10 +17,15 @@ namespace LineComparision
             double y2 = Convert.ToDouble(Console.ReadLine());
 
 
-            double distance = Convert.ToDouble(Console.Read());
-            //using distance formula to find out distance
-            distance = Math.Sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
-            Console.WriteLine(distance);
+            if (x1 == x2 && y1 == y2)
+            {
+                Console.WriteLine("Two lines are equal");
+            }
+            else
+            {
+                Console.WriteLine("Two lines are not equal");
+            }
+
 
         }
     }
